@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: url("banner-topo.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header-logo{
+    display: flex;
+    max-width: 450px;
+    padding: 100px 50px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.text-header-logo{
+  margin-left: 100px;
+}
+.text-header-logo::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("patas.png");
+  
+  background-size: cover;
+}
+.header-logo p{
+  font-size:20px;
+}
