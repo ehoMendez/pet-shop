@@ -1,38 +1,244 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
 header{
-    background-image: url("banner-topo.jpg");
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.header-logo{
-    display: flex;
-    max-width: 450px;
-    padding: 100px 50px;
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
+  background-image: url("banner-topo.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color:#3c184e;
 }
 .text-header-logo{
-  margin-left: 100px;
+position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding-top:120px;
+  padding-bottom:80px;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-.text-header-logo::before{
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url("patas.png");
+.text-header-logo h3{
+font-size: 40px;
+position: relative;
+padding-left: 40px;
+font-weight: 500;
+}
+.text-header-logo h3::before{
+position: absolute;
+content: "";
+width:30px;
+height:30px;
+left: 0px;
+bottom: 10px;
+background-image: url("patas.png");
+background-size: cover;
+}
+.text-header-logo p{
+font-size:18px;
+}
+.conteiner-text-botao{
+margin: 0 auto;
+max-width: 1400px;
+background-color: rgba(255, 255, 255, 0.741);
+padding: 50px 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.486);
+}
+
+.conteiner-texto h1{
+font-size:80px;
+font-weight: bold;
+padding-bottom: 40px;
+}
+@media(max-width:450px){
+  .conteiner-texto h1{
+    font-size: 30px;
+  }
+.conteiner-text-botao{
+  width: 300px;
+}
+.text-header-logo{
+  width: 300px;
   
-  background-size: cover;
 }
-.header-logo p{
-  font-size:20px;
+}
+
+.botao-header{
+color: white;
+background-color: #3c184e;
+padding: 10px 30px;
+font-size: 20px;
+border-radius: 10px;
+width: 200px;
+display: flex;
+}
+
+.botao-header p{
+position: relative;
+justify-content: left;
+}
+.botao-header p::after{
+position: absolute;
+content: " ";
+width: 20px;
+height: 20px;
+background-image: url("whatsapp-svgrepo-com.png");
+background-position: center;
+background-size: cover;
+left: 120px;
+}
+
+.botao-header:hover{
+  background-color: rgba(135, 37, 135, 0.844);
+  transition: 1s;
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.services-lista{
+  max-width: 850px;
+}
+.services-lista h3{
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  color:#3c184e; 
+}
+
+.services-lista ul {
+  padding-top: 10px;
+}
+.services-lista ul li{
+  padding: 10px;
+  font-size: 24px;
+  color:#3c184e; 
+}
+.services-fotos-carroussel{
+  padding-top: 40px;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+ 
+}
+
+.services-fotos-carroussel-imagem img{
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.458);
+  width: 170px;
+}
+.bg-purple{
+  background-color:#3c184e ;
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.texto-bg-purple{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.texto-bg-purple h3{
+  font-size: 50px;
+  font-weight: 500;
+}
+.bg-purple-social-media{
+  width: 300px;
+ justify-content: space-around;
+ align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.center-bg-purple{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bg-purple-social-media img{
+  width: 50px;
+}
+
+.marcas{
+  width: 100%;
+  padding: 100px 0px;
+}
+.marcas h3{
+  text-align: center;
+  font-size: 40px;
+  color: #3c184e;
+  padding: 10px 0px 40px 0px;
+}
+
+.conteiner-marcas-logos{
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foto-marca{
+  width: 20%;
+
+ 
+}
+.foto-marca img{
+  width: 100%;
+}
+
+.pet-location{
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.location-texto{
+  text-align: center;
+  color: #3c184e;
+}
+.location-texto h3{
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.location-texto p{
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.maps{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.maps iframe{
+  width: 100%;
+
+}
+
+footer{
+  padding: 30px 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: #3c184e;
+  color: white;
 }
